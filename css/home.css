@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('../images/5-2-firewatch2.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px auto;
+    color: #FFF;
+    font-size: 50px;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#show-weather-btn, #showtime-btn {
+    display: block;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    /* vertical-align: middle; */
+    margin-left: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#showtime-btn {
+    margin-top: 30px;
+}
+
+#show-weather-btn:hover, #showtime-btn:hover {
+    background-color: orange;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer span {
+    color: grey;
+    position: relative;
+}
+
+footer span a {
+    text-decoration: none;
+    color: grey;
+}
+
+footer span a:hover {
+    color: yellow;
+}
+
+footer span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-color: yellow;
+    transition: all 0.3s;
+}
+
+footer span:hover::after {
+    width: 100%;
+}
